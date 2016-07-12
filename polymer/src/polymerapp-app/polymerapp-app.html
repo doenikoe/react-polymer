@@ -1,0 +1,32 @@
+<link rel="import" href="../../bower_components/polymer/polymer.html">
+
+<dom-module id="polymerapp-app">
+  <template>
+    <style include="iron-flex iron-flex-alignment">
+      :host {
+        display: block;
+        font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+      }
+    </style>
+    <div>
+      <div class="layout horizontal wrap">One</div>
+      <div class="layout horizontal wrap">Two</div>
+      <div class="layout horizontal wrap">Three</div>
+    </div>
+  </template>
+
+  <script>
+    Polymer({
+
+      is: 'polymerapp-app',
+
+      properties: {
+        prop1: {
+          type: String,
+          value: 'polymerapp-app',
+        },
+      },
+
+    });
+  </script>
+</dom-module>
